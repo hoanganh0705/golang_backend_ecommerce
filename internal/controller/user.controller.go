@@ -2,7 +2,7 @@ package controller
 
 import (
 	"GolangBackendEcommerce/internal/service"
-	"net/http"
+	"GolangBackendEcommerce/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )
@@ -19,7 +19,10 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUserById(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": uc.userService.GetInfoUserService(),
-	})
+	if err != nil {
+		response.ErrorResponse(c, 20003, "Invalid parameter")
+		return
+	}
+	response.SuccessResponse(c, 20001, []string{"User1", "User2"})
+
 }
