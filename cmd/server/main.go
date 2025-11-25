@@ -8,7 +8,7 @@ import (
 func main() {
 	r := router.NewRouter()
 
-	if err := r.Run(":8002"); err != nil {
+	if err := r.Run(); err != nil {
 		log.Fatalf("failed to run server: %v", err)
 	}
 }
