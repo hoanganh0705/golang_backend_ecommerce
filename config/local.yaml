@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+databases:
+  - user: admin
+    password: admin
+    host: localhost
+    dbName: shopDEV
+
+  - user: order
+    password: order
+    host: localhost
+    dbName: order
+
+security:
+  jwt:
+    key: abc123
+
+redis:
+  host: localhost
+  port: 6379
+
+elasticsearch:
+  host: localhost
+  port: 9200
+
+kafka:
+  brokers:
+    - localhost:9092
+
+rabbitMQ:
+  host: localhost
+  port: 5672
