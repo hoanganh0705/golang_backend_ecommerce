@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -14,6 +15,7 @@ func NewPongController() *PongController {
 }
 
 func (pc *PongController) Pong(c *gin.Context) {
+	fmt.Println("My middleware handler")
 	name := c.Param("name")
 	name1 := c.DefaultQuery("name1", "hoanganh")
 	uid := c.Query("uid")
