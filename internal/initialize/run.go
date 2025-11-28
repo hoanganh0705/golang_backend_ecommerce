@@ -3,6 +3,8 @@ package initialize
 import (
 	"GolangBackendEcommerce/global"
 	"fmt"
+
+	"go.uber.org/zap"
 )
 
 func Run() {
@@ -12,6 +14,7 @@ func Run() {
 	fmt.Println("Loading configuration mysql", m.UserName, m.Password, m.Dbname)
 	// initialize logger
 	InitLogger()
+	global.Logger.Info("Config log ok!", zap.String("oke", "success"))
 
 	// initialize MySQL
 	InitMySQL()

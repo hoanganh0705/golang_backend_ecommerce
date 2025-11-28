@@ -1,5 +1,10 @@
 package initialize
 
+import (
+	"GolangBackendEcommerce/global"
+	"GolangBackendEcommerce/pkg/logger"
+)
+
 func InitLogger() {
-	// Implementation for initializing logger goes here
+	global.Logger = logger.NewLogger(global.Config.Logger)
 }
