@@ -35,6 +35,7 @@ func NewLogger(config settings.LogSetting) *LoggerZap {
 	default:
 		level = zapcore.InfoLevel
 	}
+	// format log entries as JSON with specific formatting rules.
 	encoder := getEncoderLog()
 	hook := lumberjack.Logger{
 		Filename:   config.Log_file_name,
