@@ -3,3 +3,5 @@
 {"level":"ERROR","time":"2025-12-07T22:25:44.917+0700","caller":"initialize/mysql.go:16","msg":"mysql error","error":"dial tcp [::1]:3306: connect: connection refused"}
 {"level":"INFO","time":"2025-12-08T11:15:01.934+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"ERROR","time":"2025-12-08T11:15:01.948+0700","caller":"initialize/mysql.go:16","msg":"mysql error","error":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"INFO","time":"2025-12-08T14:06:44.201+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2025-12-08T14:06:44.202+0700","caller":"initialize/mysql.go:16","msg":"mysql error","error":"dial tcp [::1]:3306: connect: connection refused"}
