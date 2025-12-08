@@ -12,7 +12,7 @@ func NewUserService() *UserService {
 	}
 }
 
-// user service url'
+// user service url
 // controller -> service -> repo -> models -> database
 func (us *UserService) GetInfoUserService() string {
 	return us.userRepo.GetInfoUser()
