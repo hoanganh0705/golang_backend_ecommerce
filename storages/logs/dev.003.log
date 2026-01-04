@@ -5,3 +5,17 @@
 {"level":"ERROR","time":"2025-12-08T11:15:01.948+0700","caller":"initialize/mysql.go:16","msg":"mysql error","error":"dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it."}
 {"level":"INFO","time":"2025-12-08T14:06:44.201+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"ERROR","time":"2025-12-08T14:06:44.202+0700","caller":"initialize/mysql.go:16","msg":"mysql error","error":"dial tcp [::1]:3306: connect: connection refused"}
+{"level":"INFO","time":"2026-01-04T11:07:44.410+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-04T11:07:44.415+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"Error 1045 (28000): Access denied for user 'root'@'172.17.0.1' (using password: YES)"}
+{"level":"INFO","time":"2026-01-04T11:10:38.089+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-04T11:10:39.345+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup localhos1t: no such host"}
+{"level":"INFO","time":"2026-01-04T11:12:58.755+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-04T11:12:58.756+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-04T11:13:30.338+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-04T11:13:30.339+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"ERROR","time":"2026-01-04T11:13:32.448+0700","caller":"initialize/redis.go:26","msg":"Redis connection failed","error":"dial tcp [::1]:6379: connect: connection refused"}
+{"level":"INFO","time":"2026-01-04T11:14:47.118+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-04T11:14:47.121+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-04T11:16:01.536+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-04T11:16:01.538+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"ERROR","time":"2026-01-04T11:16:03.647+0700","caller":"initialize/redis.go:26","msg":"Redis connection failed","error":"dial tcp [::1]:6379: connect: connection refused"}
