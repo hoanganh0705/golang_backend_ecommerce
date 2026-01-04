@@ -6,8 +6,8 @@ mysql:
   host: localhost
   port: 3306
   username: root
-  password: 1234
-  dbname: shopdevgo
+  password: rootpassword
+  dbname: crm_database
   maxIdleConns: 10
   maxOpenConns: 100
   connMaxLifetime: 3600
@@ -22,6 +22,6 @@ logger:
 
 redis:
   host: localhost
-  port: 6381
+  port: 6379
   password: 
   database: 0
