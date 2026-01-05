@@ -3,11 +3,11 @@ server:
   mode: dev
 
 mysql:
-  host: localhost
+  host: mysql
   port: 3306
   username: root
-  password: rootpassword
-  dbname: crm_database
+  password: root1234
+  dbname: shopdevgo
   maxIdleConns: 10
   maxOpenConns: 100
   connMaxLifetime: 3600
@@ -21,7 +21,7 @@ logger:
   compress:   true
 
 redis:
-  host: localhost
+  host: redis
   port: 6379
   password: 
   database: 0
