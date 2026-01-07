@@ -19,3 +19,16 @@
 {"level":"INFO","time":"2026-01-04T11:16:01.536+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"INFO","time":"2026-01-04T11:16:01.538+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
 {"level":"ERROR","time":"2026-01-04T11:16:03.647+0700","caller":"initialize/redis.go:26","msg":"Redis connection failed","error":"dial tcp [::1]:6379: connect: connection refused"}
+{"level":"INFO","time":"2026-01-06T21:34:53.605-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-06T21:34:54.730-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-06T22:13:24.728-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-06T22:13:28.235-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-06T22:14:27.857-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-06T22:14:31.481-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-06T22:16:34.120-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-06T22:16:34.123-0500","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-06T22:16:34.125-0500","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-06T22:23:47.645-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-06T22:23:51.230-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-06T22:24:48.158-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-06T22:24:51.730-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
