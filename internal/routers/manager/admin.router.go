@@ -13,7 +13,7 @@ func (pr *AdminRouter) InitAdminRouter(Router *gin.RouterGroup) {
 	}
 
 	// private routes
-	adminRouterPrivate := Router.Group("/admin/user ")
+	adminRouterPrivate := Router.Group("/admin/user")
 	// userRouterPrivate.Use(Limiter())
 	// userRouterPrivate.Use(Authen())
 	// userRouterPrivate.Use(Permission())

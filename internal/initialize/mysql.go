@@ -35,7 +35,7 @@ func InitMySQL() {
 	// set pool
 	// pool is used to control the number of connections to the database
 	SetPool()
-	genTableDAO()
+	// genTableDAO() // Disable code generation at runtime - should be done during development only
 
 	// migrate tables
 	// migrateTables()
