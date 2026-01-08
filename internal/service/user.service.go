@@ -2,24 +2,10 @@ package service
 
 import (
 	"GolangBackendEcommerce/internal/repo"
+	"GolangBackendEcommerce/internal/utils/random"
 	"GolangBackendEcommerce/pkg/response"
+	"fmt"
 )
-
-// type UserService struct {
-// 	userRepo *repo.UserRepo
-// }
-
-// func NewUserService() *UserService {
-// 	return &UserService{
-// 		userRepo: repo.NewUserRepo(),
-// 	}
-// }
-
-// // user service url
-// // controller -> service -> repo -> models -> database
-// func (us *UserService) GetInfoUserService() string {
-// 	return us.userRepo.GetInfoUser()
-// }
 
 type IUserService interface {
 	Register(email string, purpose string) int
@@ -30,17 +16,38 @@ type userService struct {
 	userRepo repo.IUserRepository
 }
 
-// Register implements IUserService.
-func (us *userService) Register(email string, purpose string) int {
-	// check email exists or not
-	if us.userRepo.GetUserByEmail(email, purpose) {
-		return response.ErrCodeUserHasExist
-	}
-	return response.ErrCodeSuccess
-}
-
 func NewUserService(userRepo repo.IUserRepository) IUserService {
 	return &userService{
 		userRepo: userRepo,
 	}
+}
+
+// Register implements IUserService.
+func (us *userService) Register(email string, purpose string) int {
+	// 0. hash email
+
+	// 5. check OTP is available
+
+	// 6. user spam...
+
+	// 1. check email exists in db
+	if us.userRepo.GetUserByEmail(email, purpose) {
+		return response.ErrCodeUserHasExist
+	}
+
+	// 2. new OTP
+	otp := random.GenerateSixDigitOtp()
+	if purpose == "TEST_USER" {
+		otp = 123456
+	}
+
+	fmt.Printf("otp is :::%d\n", otp)
+
+	// 3. Save OTP to redis with expiration time
+
+	// 4. Send OTP to email
+
+	// check email exists or not
+
+	return response.ErrCodeSuccess
 }

@@ -29,7 +29,9 @@ func InitRouter() *gin.Engine {
 
 	MainGroup := r.Group("/v1/2025")
 	{
-		MainGroup.GET("/checkStatus") // tracking monitor
+		MainGroup.GET("/checkStatus", func(c *gin.Context) {
+			c.JSON(200, "ok")
+		})
 	}
 	{
 		userRouter.InitUserRouter(MainGroup)

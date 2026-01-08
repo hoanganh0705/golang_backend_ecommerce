@@ -3,6 +3,7 @@ package initialize
 import (
 	"GolangBackendEcommerce/global"
 	"fmt"
+	"os"
 
 	"github.com/spf13/viper"
 )
@@ -10,9 +11,15 @@ import (
 func LoadConfig() {
 	// Implementation for loading configuration goes here
 	viper := viper.New()
-	viper.AddConfigPath("./config/") // path to config
-	viper.SetConfigName("local")     // ten file
-	viper.SetConfigType("yaml")
+
+	// Check if config file is provided as command-line argument
+	if len(os.Args) > 1 {
+		viper.SetConfigFile(os.Args[1])
+	} else {
+		viper.AddConfigPath("./config/") // path to config
+		viper.SetConfigName("local")     // ten file
+		viper.SetConfigType("yaml")
+	}
 
 	// read configuration
 	err := viper.ReadInConfig()
