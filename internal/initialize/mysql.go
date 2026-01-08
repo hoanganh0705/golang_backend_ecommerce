@@ -2,7 +2,7 @@ package initialize
 
 import (
 	"GolangBackendEcommerce/global"
-	"GolangBackendEcommerce/internal/models"
+	"GolangBackendEcommerce/internal/model"
 	"fmt"
 	"time"
 
@@ -80,7 +80,7 @@ func migrateTables() {
 	err := global.Mdb.AutoMigrate(
 		// &po.User{},
 		// &po.Role{},
-		&models.GoCrmUserV2{},
+		&model.GoCrmUser{},
 	)
 
 	if err != nil {

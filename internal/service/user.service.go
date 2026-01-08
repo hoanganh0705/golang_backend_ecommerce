@@ -4,8 +4,10 @@ import (
 	"GolangBackendEcommerce/internal/repo"
 	"GolangBackendEcommerce/internal/utils/crypto"
 	"GolangBackendEcommerce/internal/utils/random"
+	"GolangBackendEcommerce/internal/utils/sendto"
 	"GolangBackendEcommerce/pkg/response"
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -50,13 +52,20 @@ func (us *userService) Register(email string, purpose string) int {
 	fmt.Printf("otp is :::%d\n", otp)
 
 	// 3. Save OTP to redis with expiration time
-
 	err := us.userAuthRepo.AddOTP(hashEmail, otp, int64(10*time.Minute))
 	if err != nil {
 		return response.ErrInvalidOTP
 	}
 
 	// 4. Send OTP to email
+	// err = sendto.SendTextEmailOTP([]string{email}, "anh487303@gmail.com", strconv.Itoa(otp))
+	err = sendto.SendTemplateEmailOTP([]string{email}, "anh487303@gmail.com", "otp-auth.html", map[string]interface{}{
+		"Email": email,
+		"OTP":   strconv.Itoa(otp),
+	})
+	if err != nil {
+		return response.ErrSendEmailOTP
+	}
 
 	// check email exists or not
 

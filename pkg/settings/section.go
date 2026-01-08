@@ -5,6 +5,7 @@ type Config struct {
 	Mysql  MySQLSetting  `mapstructure:"mysql"` // mapstructure ở đây nghĩa là trỏ tới file local.yaml
 	Logger LogSetting    `mapstructure:"logger"`
 	Redis  RedisSetting  `mapstructure:"redis"`
+	SMTP   SMTPSetting   `mapstructure:"smtp"`
 }
 
 type ServerSetting struct {
@@ -37,4 +38,11 @@ type RedisSetting struct {
 	Port     int    `mapstructure:"port"`
 	Password string `mapstructure:"password"`
 	Database int    `mapstructure:"database"`
+}
+
+type SMTPSetting struct {
+	Host     string `mapstructure:"host"`
+	Port     int    `mapstructure:"port"`
+	Username string `mapstructure:"username"`
+	Password string `mapstructure:"password"`
 }
