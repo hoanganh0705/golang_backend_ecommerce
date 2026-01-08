@@ -32,3 +32,20 @@
 {"level":"ERROR","time":"2026-01-06T22:23:51.230-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
 {"level":"INFO","time":"2026-01-06T22:24:48.158-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"ERROR","time":"2026-01-06T22:24:51.730-0500","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-07T15:18:48.015+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-07T15:18:49.212+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-07T15:19:15.328+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-07T15:19:18.911+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-07T15:20:00.635+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-07T15:20:04.461+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-07T15:21:28.026+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-07T15:21:31.557+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp: lookup mysql: no such host"}
+{"level":"INFO","time":"2026-01-07T15:23:00.749+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-07T15:23:00.750+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-07T15:23:00.751+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-07T15:23:43.186+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-07T15:23:43.188+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-07T15:23:43.191+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-07T15:26:59.080+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-07T15:26:59.082+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-07T15:26:59.084+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
