@@ -1,0 +1,9 @@
+@baseUrl=http://localhost:8002/v1/2025
+
+POST {{baseUrl}}/user/register
+Content-Type: application/json
+
+{
+  "email": "anh478303@gmail.com",
+  "purpose": "SecurePass123"
+}

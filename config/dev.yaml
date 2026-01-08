@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8002
   mode: dev
 
 mysql:
@@ -25,3 +25,9 @@ redis:
   port: 6381
   password: 
   database: 0
+
+smtp:
+  host: smtp.gmail.com
+  port: 587
+  username: anh487303@gmail.com
+  password: lwil xifg kovh blhh
