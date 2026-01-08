@@ -97,3 +97,20 @@
 {"level":"INFO","time":"2026-01-08T20:05:34.020+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"INFO","time":"2026-01-08T20:05:34.022+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
 {"level":"INFO","time":"2026-01-08T20:05:34.023+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-08T22:06:03.101+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-08T22:06:03.102+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp [::1]:3306: connect: connection refused"}
+{"level":"INFO","time":"2026-01-08T22:06:20.060+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"ERROR","time":"2026-01-08T22:06:20.060+0700","caller":"initialize/mysql.go:17","msg":"mysql error","error":"dial tcp [::1]:3306: connect: connection refused"}
+{"level":"INFO","time":"2026-01-08T22:11:13.707+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-08T22:11:13.708+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-08T22:11:13.709+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-08T23:01:28.888+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-08T23:01:28.890+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-08T23:01:28.891+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-08T23:03:21.208+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-08T23:03:21.210+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-08T23:03:21.210+0700","caller":"initialize/mysqlc.go:29","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-08T23:03:21.211+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-08T23:13:32.245+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-08T23:13:32.245+0700","caller":"initialize/mysqlc.go:28","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-08T23:13:32.247+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}

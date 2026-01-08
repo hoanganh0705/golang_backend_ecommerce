@@ -19,7 +19,7 @@ func Run() {
 	global.Logger.Info("Config log ok!", zap.String("oke", "success"))
 
 	// initialize MySQL
-	InitMySQL()
+	InitMySQLC()
 
 	// initialize Redis
 	InitRedis()
