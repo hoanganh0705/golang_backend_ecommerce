@@ -1,6 +1,4 @@
 docs
-
-# Configuration files with sensitive data
+.env
 config/local.yaml
 config/dev.yaml
-config/production.yaml
