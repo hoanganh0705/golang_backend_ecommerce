@@ -4,6 +4,7 @@ const (
 	ErrCodeSuccess    = 20001 //Success
 	ErrCodeParamValid = 20003 //Parameter validation failed
 	ErrInvalidToken   = 30001 //token is invalid
+	ErrInvalidOTP     = 3002
 
 	// Register Code
 	ErrCodeUserHasExist = 50001 //User already exists
@@ -14,6 +15,7 @@ var msg = map[int]string{
 	ErrCodeSuccess:    "Success",
 	ErrCodeParamValid: "Parameter validation failed",
 	ErrInvalidToken:   "Token is invalid",
+	ErrInvalidOTP:     "OTP is invalid",
 
 	ErrCodeUserHasExist: "User already exists",
 }
