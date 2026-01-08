@@ -1,15 +1,13 @@
-#name app
+APP_NAME := server
+ENV ?= dev
+CONFIG := config/$(ENV).yaml
 
-APP_NAME = server
+.PHONY: dev run up down stop kill
+
+.PHONY: air
 
 dev:
-	go run ./cmd/$(APP_NAME) config/dev.yaml
-
-run:
-	docker compose up -d && go run ./cmd/$(APP_NAME) config/dev.yaml
-
-kill:
-	docker compose kill
+	go run ./cmd/$(APP_NAME) $(CONFIG)
 
 up:
 	docker compose up -d
@@ -17,6 +15,10 @@ up:
 down:
 	docker compose down
 
-.PHONY: run
+stop:
+	docker compose stop
 
-.PHONY: air
+kill:
+	docker compose kill
+
+run: up dev

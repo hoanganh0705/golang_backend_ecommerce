@@ -49,3 +49,6 @@
 {"level":"INFO","time":"2026-01-07T15:26:59.080+0700","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
 {"level":"INFO","time":"2026-01-07T15:26:59.082+0700","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
 {"level":"INFO","time":"2026-01-07T15:26:59.084+0700","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}
+{"level":"INFO","time":"2026-01-07T22:44:42.215-0500","caller":"initialize/run.go:19","msg":"Config log ok!","oke":"success"}
+{"level":"INFO","time":"2026-01-07T22:44:42.218-0500","caller":"initialize/mysql.go:32","msg":"MySQL connected successfully"}
+{"level":"INFO","time":"2026-01-07T22:44:42.220-0500","caller":"initialize/redis.go:47","msg":"Redis get score","score":"100"}

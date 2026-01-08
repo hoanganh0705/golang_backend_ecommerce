@@ -2,9 +2,11 @@ package service
 
 import (
 	"GolangBackendEcommerce/internal/repo"
+	"GolangBackendEcommerce/internal/utils/crypto"
 	"GolangBackendEcommerce/internal/utils/random"
 	"GolangBackendEcommerce/pkg/response"
 	"fmt"
+	"time"
 )
 
 type IUserService interface {
@@ -13,18 +15,22 @@ type IUserService interface {
 
 // ở đây không cần dùng pointer vì interface đã là 1 con trỏ ẩn rồi
 type userService struct {
-	userRepo repo.IUserRepository
+	userRepo     repo.IUserRepository
+	userAuthRepo repo.IUserAuthRepository
 }
 
-func NewUserService(userRepo repo.IUserRepository) IUserService {
+func NewUserService(userRepo repo.IUserRepository, userAuthRepo repo.IUserAuthRepository) IUserService {
 	return &userService{
-		userRepo: userRepo,
+		userRepo:     userRepo,
+		userAuthRepo: userAuthRepo,
 	}
 }
 
 // Register implements IUserService.
 func (us *userService) Register(email string, purpose string) int {
 	// 0. hash email
+	hashEmail := crypto.GetHash(email)
+	fmt.Printf("hashed email is :::%s\n", hashEmail)
 
 	// 5. check OTP is available
 
@@ -44,6 +50,11 @@ func (us *userService) Register(email string, purpose string) int {
 	fmt.Printf("otp is :::%d\n", otp)
 
 	// 3. Save OTP to redis with expiration time
+
+	err := us.userAuthRepo.AddOTP(hashEmail, otp, int64(10*time.Minute))
+	if err != nil {
+		return response.ErrInvalidOTP
+	}
 
 	// 4. Send OTP to email
 
